@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Xtra_printshiftPos" SnapGridSize="25" ReportUnit="TenthsOfAMillimeter" RollPaper="true" Margins="0, 11, 530, 25" PaperKind="Custom" PageWidth="800" PageHeight="2794" Version="19.2" DataSource="#Ref-0" Dpi="254" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="529.8334" Dpi="254">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRPictureBox" Name="xrPictureBox1" Sizing="StretchImage" SizeF="378.354065,233.680145" LocationFloat="206.375, 25.0000076" Dpi="254">
+          <ExpressionBindings>
+            <Item1 Ref="4" EventName="BeforePrint" PropertyName="ImageUrl" Expression="[CompanyeLogCompany]" />
+          </ExpressionBindings>
+        </Item1>
+        <Item2 Ref="5" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="608.542,58.4199829" LocationFloat="79.375, 279.4001" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="6" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeNameA]" />
+          </ExpressionBindings>
+          <StylePriority Ref="7" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="8" ControlType="XRLabel" Name="xrLabel2" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="608.542,58.4199524" LocationFloat="79.375, 337.820129" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="9" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeTelephone1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="10" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="11" ControlType="XRLabel" Name="xrLabel3" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="608.542,58.4200134" LocationFloat="79.375, 396.2401" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeTelephone2]" />
+          </ExpressionBindings>
+          <StylePriority Ref="13" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="14" ControlType="XRLabel" Name="xrLabel4" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="608.542,58.4199829" LocationFloat="79.375, 467.8894" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[Companyewebsite]" />
+          </ExpressionBindings>
+          <StylePriority Ref="16" UseTextAlignment="false" />
+        </Item5>
+      </Controls>
+    </Item1>
+    <Item2 Ref="17" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="25" Dpi="254" />
+    <Item3 Ref="18" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="71.12" Dpi="254">
+      <Controls>
+        <Item1 Ref="19" ControlType="XRTable" Name="table1" TextAlignment="TopCenter" SizeF="764.000061,71.12" LocationFloat="0, 0" Dpi="254">
+          <Rows>
+            <Item1 Ref="20" ControlType="XRTableRow" Name="tableRow1" Weight="1" Dpi="254">
+              <Cells>
+                <Item1 Ref="21" ControlType="XRTableCell" Name="tableCell1" Weight="0.3754996071875682" Text="الاسم" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailCaption1" Borders="None">
+                  <StylePriority Ref="22" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="23" ControlType="XRTableCell" Name="tableCell2" Weight="0.17279251330259776" Text="مجموع" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailCaption1">
+                  <StylePriority Ref="24" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="25" ControlType="XRTableCell" Name="tableCell3" Weight="0.15000344425430434" Text="الخصم" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailCaption1">
+                  <StylePriority Ref="26" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="27" ControlType="XRTableCell" Name="tableCell4" Weight="0.1328908747335561" Text="الضريبة" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailCaption1">
+                  <StylePriority Ref="28" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="29" ControlType="XRTableCell" Name="tableCell5" Weight="0.16881357225950372" Text="الصافي" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailCaption1">
+                  <StylePriority Ref="30" UseTextAlignment="false" />
+                </Item5>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="31" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="32" ControlType="DetailBand" Name="Detail" HeightF="94.7207947" Dpi="254">
+      <HierarchyPrintOptions Ref="33" Indent="50.8" />
+      <Controls>
+        <Item1 Ref="34" ControlType="XRTable" Name="table2" SizeF="763.999939,63.5" LocationFloat="0, 0" Dpi="254" OddStyleName="DetailData3_Odd">
+          <Rows>
+            <Item1 Ref="35" ControlType="XRTableRow" Name="tableRow2" Weight="11.5" Dpi="254">
+              <Cells>
+                <Item1 Ref="36" ControlType="XRTableCell" Name="tableCell6" Weight="0.3754996008674612" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailData1" Font="Arial, 8pt" Borders="None">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[name]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="38" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="39" ControlType="XRTableCell" Name="tableCell7" Weight="0.17279251422910519" TextFormatString="{0:#.00}" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="40" EventName="BeforePrint" PropertyName="Text" Expression="[TotalAmount]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="41" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="42" ControlType="XRTableCell" Name="tableCell8" Weight="0.15000344604114266" TextFormatString="{0:#.00}" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[TotalDiscount]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="44" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="45" ControlType="XRTableCell" Name="tableCell9" Weight="0.13289087526298782" TextFormatString="{0:#.00}" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="46" EventName="BeforePrint" PropertyName="Text" Expression="[TotalTax]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="47" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="48" ControlType="XRTableCell" Name="tableCell10" Weight="0.16881355186177302" TextFormatString="{0:#.00}" TextAlignment="MiddleCenter" Dpi="254" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="49" EventName="BeforePrint" PropertyName="Text" Expression="[GrossTotalAmount]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="50" UseTextAlignment="false" />
+                </Item5>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="51" ControlType="GroupFooterBand" Name="GroupFooter1" HeightF="365.305" Dpi="254">
+      <Controls>
+        <Item1 Ref="52" ControlType="XRLabel" Name="xrLabel13" Multiline="true" Text=":تاريخ الانتهاء" SizeF="254,58.42" LocationFloat="509.999878, 195.580032" Dpi="254" Padding="5,5,0,0,254" />
+        <Item2 Ref="53" ControlType="XRLabel" Name="xrLabel14" Multiline="true" Text=":مستخدم اغلاق" SizeF="254,58.42" LocationFloat="509.999878, 254.000076" Dpi="254" Padding="5,5,0,0,254" />
+        <Item3 Ref="54" ControlType="XRLabel" Name="xrLabel12" Multiline="true" Text=":مستخدم انشاء" SizeF="254,58.42" LocationFloat="510.000031, 123.93074" Dpi="254" Padding="5,5,0,0,254" />
+        <Item4 Ref="55" ControlType="XRLabel" Name="xrLabel11" Multiline="true" Text=":تاريخ الجلسة" SizeF="254,58.42" LocationFloat="510.000031, 65.5107" Dpi="254" Padding="5,5,0,0,254" />
+        <Item5 Ref="56" ControlType="XRLabel" Name="xrLabel10" Multiline="true" Text=":اسم الجلسة" SizeF="254,58.42" LocationFloat="509.999939, 7.090733" Dpi="254" Padding="2,2,0,0,96" />
+        <Item6 Ref="57" ControlType="XRLabel" Name="xrLabel9" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="454.1228,58.4200134" LocationFloat="41.68744, 254" Dpi="254" Font="Arial, 8pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="58" EventName="BeforePrint" PropertyName="Text" Expression="[usercloseshiftposNameA]" />
+          </ExpressionBindings>
+          <StylePriority Ref="59" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="60" ControlType="XRLabel" Name="xrLabel5" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="454.1228,58.4199867" LocationFloat="41.68744, 7.090733" Dpi="254" Font="Arial, 8pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="61" EventName="BeforePrint" PropertyName="Text" Expression="[shposNameA]" />
+          </ExpressionBindings>
+          <StylePriority Ref="62" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="63" ControlType="XRLabel" Name="xrLabel6" TextFormatString="{0:MM/dd/yyyy HH:mm}" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="454.1228,58.4199448" LocationFloat="41.68744, 65.51078" Dpi="254" Font="Arial, 8pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="64" EventName="BeforePrint" PropertyName="Text" Expression="[shposDateCreate]" />
+          </ExpressionBindings>
+          <StylePriority Ref="65" UseFont="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="66" ControlType="XRLabel" Name="xrLabel7" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="454.1228,58.42003" LocationFloat="41.68744, 123.93074" Dpi="254" Font="Arial, 8pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="67" EventName="BeforePrint" PropertyName="Text" Expression="[usercreateshiftposNameA]" />
+          </ExpressionBindings>
+          <StylePriority Ref="68" UseFont="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="69" ControlType="XRLabel" Name="xrLabel8" TextFormatString="{0:MM/dd/yyyy HH:mm}" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="454.1228,58.4199829" LocationFloat="41.68744, 195.580032" Dpi="254" Font="Arial, 8pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="70" EventName="BeforePrint" PropertyName="Text" Expression="[shposDateClose]" />
+          </ExpressionBindings>
+          <StylePriority Ref="71" UseFont="false" UseTextAlignment="false" />
+        </Item10>
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="72" Name="Title" BorderStyle="Inset" Font="Arial, 14.25pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="73" Name="DetailCaption1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="74" Name="DetailData1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="75" Name="DetailData3_Odd" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="76" Name="PageInfo" BorderStyle="Inset" Padding="5,5,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v19.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxEYXRhU291cmNlIFR5cGU9IlBvcy5EYXRhU2V0MStwcmludHNoaWZ0UG9zRGF0YVRhYmxlLCBQb3MsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
