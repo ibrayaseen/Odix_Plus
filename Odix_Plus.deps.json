@@ -17,6 +17,7 @@
           "Guna.UI2.WinForms": "2.0.3.5",
           "Krypton": "2.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.7",
+          "OdixTools": "1.0.0",
           "QRCoder": "1.4.3",
           "System.Data.SqlClient": "4.8.3",
           "System.Management": "6.0.0",
@@ -2001,6 +2002,15 @@
           }
         }
       },
+      "OdixTools/1.0.0": {
+        "dependencies": {
+          "DevExpress.Win.Design": "21.2.6",
+          "Guna.UI2.WinForms": "2.0.3.5"
+        },
+        "runtime": {
+          "OdixTools.dll": {}
+        }
+      },
       "ClassLib/1.0.0.0": {
         "runtime": {
           "ClassLib.dll": {
@@ -2989,6 +2999,11 @@
       "sha512": "sha512-0+6EcJ7Ve1BocwqvqpAmgMa7xF3wxqROcM3KvAE6WGNIqXLA5YEziLjRX+kKYVrcttlFRz1IaoRSzt/o6Ttviw==",
       "path": "zxing.net/0.16.6",
       "hashPath": "zxing.net.0.16.6.nupkg.sha512"
+    },
+    "OdixTools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ClassLib/1.0.0.0": {
       "type": "reference",
