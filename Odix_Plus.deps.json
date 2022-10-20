@@ -2303,6 +2303,11 @@
         },
         "runtime": {
           "OdixTools.dll": {}
+        },
+        "resources": {
+          "ar-SA/OdixTools.resources.dll": {
+            "locale": "ar-SA"
+          }
         }
       },
       "ClassLib/1.0.0.0": {
