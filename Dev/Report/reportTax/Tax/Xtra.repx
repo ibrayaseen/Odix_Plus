@@ -146,7 +146,7 @@
               <Cells>
                 <Item1 Ref="62" ControlType="XRTableCell" Name="xrTableCell21" Weight="1" TextFormatString="{0:#.00}" Text="المبيعات" TextAlignment="MiddleCenter" StyleName="DetailCaption1" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="White" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="63" EventName="BeforePrint" PropertyName="Text" Expression="[TotalTaxReturnPurshase]" />
+                    <Item1 Ref="63" EventName="BeforePrint" PropertyName="Text" Expression="[TotalAmountReturnPurshase]" />
                   </ExpressionBindings>
                   <StylePriority Ref="64" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
                 </Item1>

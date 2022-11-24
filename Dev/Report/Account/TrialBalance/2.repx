@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.2.3.0" Ref="2" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraTrialBalance" SnapGridSize="25" ReportUnit="TenthsOfAMillimeter" Landscape="true" Margins="25, 5, 300, 124" PaperKind="A4" PageWidth="2970" PageHeight="2100" Version="19.2" RightToLeft="Yes" RightToLeftLayout="Yes" DataMember="Reort_TrialBalance" DataSource="#Ref-0" DataAdapter="#Ref-1" Dpi="254" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="3" ControlType="TopMarginBand" Name="TopMargin" HeightF="300" Dpi="254">
+      <Controls>
+        <Item1 Ref="4" ControlType="XRLabel" Name="xrLabel18" Multiline="true" Text=":الى تاريخ" TextAlignment="MiddleLeft" SizeF="195.7916,58.41998" LocationFloat="1583.099, 182.1392" Dpi="254" Padding="5,5,0,0,254">
+          <StylePriority Ref="5" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="6" ControlType="XRLabel" Name="xrLabel19" TextFormatString="{0:dd/MM/yyyy}" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="349.2504,58.41998" LocationFloat="1221.995, 182.1392" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="7" EventName="BeforePrint" PropertyName="Text" Expression="[ToDate]" />
+          </ExpressionBindings>
+          <StylePriority Ref="8" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="9" ControlType="XRLabel" Name="xrLabel16" Multiline="true" Text=":من تاريخ" TextAlignment="MiddleLeft" SizeF="195.7916,58.42001" LocationFloat="1581.828, 123.7192" Dpi="254" Padding="5,5,0,0,254">
+          <StylePriority Ref="10" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="11" ControlType="XRLabel" Name="xrLabel17" TextFormatString="{0:dd/MM/yyyy}" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="349.2504,58.42001" LocationFloat="1223.266, 123.7193" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[FromDate]" />
+          </ExpressionBindings>
+          <StylePriority Ref="13" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="14" ControlType="XRLabel" Name="xrLabel15" Multiline="true" Text="ميزان مراجعة" TextAlignment="MiddleCenter" SizeF="324.3907,58.42001" LocationFloat="1355.819, 41.27502" Dpi="254" Font="Arial, 14pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="15" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="16" ControlType="XRLabel" Name="xrLabel3" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="685.4831,58.41999" LocationFloat="78.21041, 88.90003" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="17" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeNameA]" />
+          </ExpressionBindings>
+          <StylePriority Ref="18" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="19" ControlType="XRLabel" Name="xrLabel4" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="685.4831,58.41998" LocationFloat="78.21041, 147.3201" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="20" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeTelephone1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="21" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="22" ControlType="XRLabel" Name="xrLabel5" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="685.4831,58.42001" LocationFloat="78.21041, 205.74" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="23" EventName="BeforePrint" PropertyName="Text" Expression="[CompanyeTelephone2]" />
+          </ExpressionBindings>
+          <StylePriority Ref="24" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="25" ControlType="XRLabel" Name="xrLabel6" Multiline="true" Text="xrLabel1" TextAlignment="MiddleRight" SizeF="539.7505,58.41998" LocationFloat="3067.261, 459.9518" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="[Companyewebsite]" />
+          </ExpressionBindings>
+          <StylePriority Ref="27" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="28" ControlType="XRPictureBox" Name="xrPictureBox1" Sizing="StretchImage" SizeF="378.354,233.6801" LocationFloat="2477.241, 30.47989" Dpi="254">
+          <ExpressionBindings>
+            <Item1 Ref="29" EventName="BeforePrint" PropertyName="ImageUrl" Expression="[CompanyeLogCompany]" />
+          </ExpressionBindings>
+        </Item10>
+      </Controls>
+    </Item1>
+    <Item2 Ref="30" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="124.46" Dpi="254">
+      <Controls>
+        <Item1 Ref="31" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="795.02,58.42001" LocationFloat="15.24, 15.24" Dpi="254" StyleName="PageInfo" />
+        <Item2 Ref="32" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="795.02,58.42001" LocationFloat="840.74, 15.24" Dpi="254" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="33" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="518.1373" Dpi="254">
+      <Controls>
+        <Item1 Ref="34" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="Reort_TrialBalance" SizeF="2840.355,518.1373" LocationFloat="15.87487, 0" Dpi="254">
+          <LayoutOptions Ref="35" />
+          <PrintOptions Ref="36" AcrossThenDownOffset="25.4" />
+          <RowFields>
+            <Item1 Ref="37" FieldName="ParentName" />
+            <Item2 Ref="38" FieldName="Name" />
+          </RowFields>
+          <DataFields>
+            <Item1 Ref="39" FieldName="PrevoiusBalanceDebit" />
+            <Item2 Ref="40" FieldName="PrevoiusBalanceCredit" />
+            <Item3 Ref="41" FieldName="DebitAmount" />
+            <Item4 Ref="42" FieldName="CreditAmount" />
+            <Item5 Ref="43" FieldName="CurrentBalanceDebit" />
+            <Item6 Ref="44" FieldName="CurrentBalanceCredit" />
+          </DataFields>
+          <ColumnDefinitions>
+            <Item1 Ref="45" Width="604.3308" />
+            <Item2 Ref="46" Width="604.3307" />
+            <Item3 Ref="47" Width="271.9489" />
+            <Item4 Ref="48" Width="271.9489" />
+            <Item5 Ref="49" Width="271.9489" />
+            <Item6 Ref="50" Width="271.9489" />
+            <Item7 Ref="51" Width="271.9489" />
+            <Item8 Ref="52" Width="271.9489" />
+          </ColumnDefinitions>
+          <RowDefinitions>
+            <Item1 Ref="53" Height="82.83199" Visible="false" />
+            <Item2 Ref="54" Height="54.20826" />
+            <Item3 Ref="55" Height="90.8726" />
+            <Item4 Ref="56" Height="98.81019" />
+            <Item5 Ref="57" Height="191.4143" Visible="false" />
+          </RowDefinitions>
+          <Cells>
+            <Item1 Ref="58" ControlType="XRCrossTabCell" Name="crossTabDataCell1" TextFormatString="{0:#.00}" ColumnIndex="2" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item2 Ref="59" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="2" RowIndex="0" ColumnSpan="6" Dpi="254" />
+            <Item3 Ref="60" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" TextFormatString="{0:#.00}" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" />
+            <Item4 Ref="61" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="2" RowIndex="1" Text="رصيد سابق مدين" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item5 Ref="62" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="3" RowIndex="1" Text="رصسد سابق دائن" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item6 Ref="63" ControlType="XRCrossTabCell" Name="crossTabDataCell2" TextFormatString="{0:#.00}" ColumnIndex="3" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item7 Ref="64" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="1" Text="مدين" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item8 Ref="65" ControlType="XRCrossTabCell" Name="crossTabDataCell3" TextFormatString="{0:#.00}" ColumnIndex="4" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item9 Ref="66" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="5" RowIndex="1" Text="دائن" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item10 Ref="67" ControlType="XRCrossTabCell" Name="crossTabDataCell4" TextFormatString="{0:#.00}" ColumnIndex="5" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item11 Ref="68" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="6" RowIndex="1" Text="الرصيد مدين" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item12 Ref="69" ControlType="XRCrossTabCell" Name="crossTabDataCell5" TextFormatString="{0:#.00}" ColumnIndex="6" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item13 Ref="70" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="7" RowIndex="1" Text="الرصيد الدائن" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Blue" />
+            <Item14 Ref="71" ControlType="XRCrossTabCell" Name="crossTabDataCell6" TextFormatString="{0:#.00}" ColumnIndex="7" RowIndex="2" TextAlignment="MiddleCenter" Dpi="254" ForeColor="Black" />
+            <Item15 Ref="72" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="4" ColumnSpan="2" Text="Grand Total" Dpi="254" />
+            <Item16 Ref="73" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="4" Dpi="254" />
+            <Item17 Ref="74" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="3" RowIndex="4" Dpi="254" />
+            <Item18 Ref="75" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="4" RowIndex="4" Dpi="254" />
+            <Item19 Ref="76" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="5" RowIndex="4" Dpi="254" />
+            <Item20 Ref="77" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="6" RowIndex="4" Dpi="254" />
+            <Item21 Ref="78" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="7" RowIndex="4" Dpi="254" />
+            <Item22 Ref="79" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="1" RowIndex="0" RowSpan="2" Text="الحساب" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" />
+            <Item23 Ref="80" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="1" RowIndex="2" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Black" />
+            <Item24 Ref="81" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="3" ColumnSpan="2" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item25 Ref="82" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" TextFormatString="{0:#.00}" ColumnIndex="2" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item26 Ref="83" ControlType="XRCrossTabCell" Name="crossTabTotalCell8" TextFormatString="{0:#.00}" ColumnIndex="3" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item27 Ref="84" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" TextFormatString="{0:#.00}" ColumnIndex="4" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item28 Ref="85" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" TextFormatString="{0:#.00}" ColumnIndex="5" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item29 Ref="86" ControlType="XRCrossTabCell" Name="crossTabTotalCell11" TextFormatString="{0:#.00}" ColumnIndex="6" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item30 Ref="87" ControlType="XRCrossTabCell" Name="crossTabTotalCell12" TextFormatString="{0:#.00}" ColumnIndex="7" RowIndex="3" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" ForeColor="Red" />
+            <Item31 Ref="88" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="0" RowIndex="0" RowSpan="2" Text="الحساب الئيسي" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 9.75pt, style=Bold" />
+          </Cells>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="89" ControlType="DetailBand" Name="Detail" HeightF="0" Dpi="254">
+      <HierarchyPrintOptions Ref="90" Indent="50.8" />
+    </Item4>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="91" Name="Title" BorderStyle="Inset" Font="Arial, 14.25pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="92" Name="DetailCaption1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="93" Name="DetailData1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="94" Name="DetailData3_Odd" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="95" Name="PageInfo" BorderStyle="Inset" Padding="5,5,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item6 Ref="96" Name="crossTabGeneralStyle1" BorderStyle="Inset" Padding="5,5,0,0,254" Font="Arial, 9.75pt" ForeColor="Black" BackColor="White" BorderColor="255,160,160,160" Sides="All" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item7 Ref="97" Name="crossTabHeaderStyle1" BorderStyle="Inset" BackColor="255,240,240,240" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item8 Ref="98" Name="crossTabDataStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;Default" TextAlignment="MiddleRight" />
+    <Item9 Ref="99" Name="crossTabTotalStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;Default" TextAlignment="MiddleRight" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="100" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v19.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxEYXRhU291cmNlIFR5cGU9IlBvcy5EYXRhU2V0MStSZW9ydF9UcmlhbEJhbGFuY2VEYXRhVGFibGUsIERhdGFTZXQxLkRlc2lnbmVyLmNzLmRsbCwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiIC8+PC9PYmplY3REYXRhU291cmNlPg==" />
+    <Item2 Ref="0" />
+    <Item3 Ref="101" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.2" Ref="1" Content="~Xtra#NULL" Type="Pos.DataSet1TableAdapters.Banks_ListGetTableAdapter" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>
